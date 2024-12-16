@@ -6,12 +6,17 @@
     <title>lion Electric</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="js/firebase-init.js"></script>
+
+    <!-- link para q funcione las funetes de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
         <div class="menu container">
             <h1 class="lion">LION ELECTRIC</h1>
-                    <a href="#" class="btn-login">REGISTRARSE</a>
         </div> 
                 <!--este div es el menu-->
         <div class="header-content container">
@@ -37,6 +42,9 @@
                 Explora más y reserva la tuya hoy mismo.
 
             </p>
+            <button style="width:300px; height:40px; border-radius:50px; margin-left: 25px; background:white; ">
+                <a href="./Ensamblaje Bic.html" width="300px" style="color:black;" target="_blank">Pedaleé al futuro, vive la energía con Lion Electric</a>
+            </button>
         </div>
     </section>
 
@@ -99,6 +107,7 @@
             <p>
                 Materiales Duraderos: Construida con componentes de alta calidad para una mayor durabilidad.
             </p>
+
         </div>
         <div class="prices-2"  >
             <video height="850"   controls autoplay muted>    
@@ -167,17 +176,23 @@
                 reserva la tuya hoy mismo
             </h2>
 
-            <form>
+            <form id="myForm">
                 <div class="campo-1">
-                    <input class="campo" type="text" placeholder="nombre">
-                    <input class="campo" type="number" placeholder="telefono">
+                    <input class="campo" type="text" placeholder="nombre" name="name" required>
+                    <input class="campo" type="number" placeholder="telefono" name="phone" required>
                      <div class="campo-1"></div>
-                    <input class="campo" type="text" placeholder="direccion">
-                    <input class="campo" type="email" placeholder="correo">
+                    <input class="campo" type="text" placeholder="direccion"name="addres" required>
+                    <input class="campo" type="email" placeholder="correo" name="email" required>
                 </div>
-                <textarea class="campo" cols="30" rows="10" placeholder="texto"></textarea>
+                <textarea class="campoText" cols="30" rows="10" placeholder="texto" name="text" required></textarea>
                 <input type="submit" value="Enviar" class="btn-1" >
             </form>
+                        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+            emailjs.init('mGSN5RENgrBuWKFs6')
+            </script>
         </div>
         <div class="footer-txt">
             <p>
@@ -188,7 +203,7 @@
 
     <script type="module" src="js/script.js"></script>
 
-    
+     <!--lionelectrick@gmail.com contraseña lion#1234, git es lion#123456-->
     
 </body>
 </html>

@@ -4,546 +4,795 @@
 
 /* Estilo global para todos los elementos */
 * {
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    list-style: none; /* Elimina los puntos de las listas */
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el tamaño total del elemento */
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    list-style: none;
+    /* Elimina los puntos de las listas */
 }
 
 /* Estilos para el cuerpo de la página */
 body {
-    font-family: 'Poppins', sans-serif; /* Define la fuente principal */
-    background-color: #1f1f1f; /* Color de fondo oscuro */
-    width: 100%; /* Ancho total */
+    background-color: #1f1f1f;
+    /* Color de fondo oscuro */
+    width: 100%;
+    /* Ancho total */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* Contenedor para los servicios */
 .services {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
 }
 
 /* Estilos para el título principal */
 h1 {
-    font-size: 40px; /* Tamaño de la fuente */
-    letter-spacing: 5px; /* Espaciado entre letras */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-weight: 'Bebas Neue', cursive; /* Fuente del título */
-    color: greenyellow; /* Color del texto */
-    margin: 30px 0 45px; /* Margen superior, sin margen lateral, y margen inferior */
+    font-size: 40px;
+    /* Tamaño de la fuente */
+    letter-spacing: 5px;
+    /* Espaciado entre letras */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    color: white;
+    /* Color del texto */
+    margin: 30px 0 45px;
+    /* Margen superior, sin margen lateral, y margen inferior */
 }
 
 /* Estilos para el subtítulo */
 .subtitulole {
-    font-size: 50px; /* Tamaño de la fuente */
-    letter-spacing: 50px; /* Espaciado entre letras */
-    font-weight: 'Bebas Neue', cursive; /* Fuente del subtítulo */
-    color: #ffffff; /* Color blanco */
-    text-align: center; /* Centra el texto */
+
+    border-radius: 10px;
+    
+    font-size: 50px;
+    /* Tamaño de la fuente */
+    letter-spacing: 50px;
+    /* Fuente del subtítulo */
+    color: #ffffff;
+    /* Color blanco */
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    margin: 0 auto;
 }
 
 .btn-login {
     font-size: 25px;
     padding: 20px;
-    color: greenyellow;
+    color: white;
     display: block;
     width: 20%;
 }
 
 /* Estilos para textos dentro de la cabecera */
 
-.header-txt{
+.header-txt {
     display: grid;
-    align-items:flex-end ;
+    align-items: flex-end;
     width: 100%;
     justify-content: end;
 }
 
 /* Efecto hover para cambiar color al pasar el mouse */
-.header-txt span:hover, h3:hover {
-    color: #ffffff; /* Cambia el color a blanco */
+.header-txt span:hover,
+h3:hover {
+    color: #ffffff;
+    /* Cambia el color a blanco */
 }
 
-.header-txt span, h3 {
-    font-size: 30px; /* Tamaño de la fuente */
-    letter-spacing: 5px; /* Espaciado entre letras */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-family: 'Bebas Neue', cursive; /* Fuente del texto */
-    color: greenyellow; /* Color del texto */
-    margin-bottom: 15px; /* Margen inferior */
+.header-txt span,
+h3 {
+    font-size: 30px;
+    /* Tamaño de la fuente */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    color: white;
+    /* Color del texto */
+    margin-bottom: 15px;
+    /* Margen inferior */
     max-width: 600px;
 }
+
 /* Estilo para la cabecera con imagen de fondo */
 .header {
-    background-image: url(images/9.jpeg); /* Imagen de fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-size: cover; /* Cubre todo el área del contenedor */
-    min-height: 70vh; /* Altura mínima del contenedor */
-    width: 100%; /* Ancho total */
-    display: flex; /* Usar flexbox para el diseño */
-    align-items: center; /* Centra verticalmente los elementos */
+    background-image: url(images/9.jpeg);
+    /* Imagen de fondo */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* No repite la imagen */
+    background-size: cover;
+    /* Cubre todo el área del contenedor */
+    min-height: 70vh;
+    /* Altura mínima del contenedor */
+    width: 100%;
+    /* Ancho total */
+    display: flex;
+    /* Usar flexbox para el diseño */
+    align-items: center;
+    /* Centra verticalmente los elementos */
 }
 
 /* Contenido dentro de la cabecera */
 .header-content {
-    width: 100%; /* Ancho total */
+    width: 100%;
+    /* Ancho total */
     margin: 0;
 }
 
 /* Estilos para párrafos dentro de la cabecera */
 .header-txt p {
-    color: #070707; /* Color del texto */
-    text-align: left; /* Justifica a la derecha */
-    font-size: 18px; /* Tamaño de la fuente */
-    max-width: 600px; /* Ancho máximo */
+    color: #000000;
+    /* Color del texto */
+    text-align: left;
+    /* Justifica a la derecha */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    max-width: 600px;
+    /* Ancho máximo */
+    background: rgb(255, 255, 255, .5);
+    padding: 10px 0 10px 10px;
+    border-radius: 20px;
 }
 
 /* Estilos para el texto "descubre" */
 .header-txt-span {
-    
-    max-width: 600px; /* Ancho máximo */
-    font-size: 25px; /* Tamaño de la fuente */
-    text-align: left; /* Centra el texto */
+
+    max-width: 600px;
+    /* Ancho máximo */
+    font-size: 25px;
+    /* Tamaño de la fuente */
+    text-align: left;
+    /* Centra el texto */
 }
 
 /* Estilo para enlaces dentro de la cabecera */
 .header-txt A {
-    max-width: 600px; /* Ancho máximo */
+    max-width: 600px;
+    /* Ancho máximo */
 }
 
 /* Estilos para el botón "Leer más" */
 .btn-1a {
-    display: inline-block; /* Hace que el botón sea un bloque en línea */
-    padding: 1px 30px; /* Relleno interno del botón */
-    color: greenyellow; /* Color del texto del botón */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    font-size: 22px; /* Tamaño de la fuente */
-    font-family: 'Bebas Neue', cursive; /* Fuente del botón */
-    margin: 25px 0; /* Margen superior e inferior */
-    border: 0; /* Sin borde */
-    background-color:none;
+    display: inline-block;
+    /* Hace que el botón sea un bloque en línea */
+    padding: 1px 30px;
+    /* Relleno interno del botón */
+    color: white;
+    /* Color del texto del botón */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    font-size: 22px;
+    /* Tamaño de la fuente */
+    margin: 25px 0;
+    /* Margen superior e inferior */
+    border: none;
+    /* Sin borde */
+    background-color: none;
 }
 
 .btn-1 {
-    display: inline-block; /* Hace que el botón sea un bloque en línea */
-    padding: 1px 30px; /* Relleno interno del botón */
-    color: greenyellow; /* Color del texto del botón */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    font-size: 22px; /* Tamaño de la fuente */
-    font-family: 'Bebas Neue', cursive; /* Fuente del botón */
-    margin: 25px 0; /* Margen superior e inferior */
-    border: 0; /* Sin borde */
-    background-color:black;
+    display: inline-block;
+    /* Hace que el botón sea un bloque en línea */
+    padding: 1px 30px;
+    /* Relleno interno del botón */
+    color: white;
+    /* Color del texto del botón */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    font-size: 22px;
+    /* Tamaño de la fuente */
+    margin: 25px 0;
+    /* Margen superior e inferior */
+    border: 0;
+    /* Sin borde */
+    background-color: black;
 }
 
 .btn-1a:hover {
-    background-color: black; /* Cambia el color de fondo al pasar el cursor */
+    background-color: black;
+    /* Cambia el color de fondo al pasar el cursor */
 }
 
 .btn-1:hover {
-    background-color:red; /* Cambia el color de fondo al pasar el cursor */
+    background-color: red;
+    /* Cambia el color de fondo al pasar el cursor */
 }
 
 /* Estilo para la sección de bienvenida */
 .welcome-2 {
-    width: 100%; /* Ancho total */
-    background-color: #070707; /* Color de fondo oscuro */
-    text-align: center; /* Centra el contenido */
-    min-height: 400px; /* Altura mínima */
-    padding-top: 60px; /* Relleno superior */
+    width: 100%;
+    /* Ancho total */
+    background-color: #070707;
+    /* Color de fondo oscuro */
+    text-align: center;
+    /* Centra el contenido */
+    min-height: 400px;
+    /* Altura mínima */
+    padding-top: 60px;
+    /* Relleno superior */
 }
+
 
 /* Estilo para los títulos dentro de servicios */
 .services-1 h3 {
-    font-size: 25px; /* Tamaño de la fuente */
-    color: greenyellow; /* Color del texto */
+    font-size: 25px;
+    /* Tamaño de la fuente */
+    color: white;
+    /* Color del texto */
 }
 
 /* Clases para centrar texto */
-.b1, .b2 {
-    color: #ffffff; /* Color del texto */
-    text-align: center; /* Centra el texto */
+.b1,
+.b2 {
+    color: #ffffff;
+    /* Color del texto */
+    text-align: center;
+    /* Centra el texto */
 }
 
 
 /* Estilos para el menú de navegación */
 .menu {
-    position: absolute; /* Posicionamiento absoluto para que flote en la parte superior */
-    top: 0; /* Pegado a la parte superior */
-    left: 0; /* Pegado a la izquierda */
-    right: 0; /* Pegado a la derecha */
-    display: flex; /* Usar flexbox para alinear elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: space-between; /* Espacio entre los elementos */
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    position: absolute;
+    /* Posicionamiento absoluto para que flote en la parte superior */
+    top: 0;
+    /* Pegado a la parte superior */
+    left: 0;
+    /* Pegado a la izquierda */
+    right: 0;
+    /* Pegado a la derecha */
+    display: flex;
+    /* Usar flexbox para alinear elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    z-index: 1000;
+    /* Asegura que esté sobre otros elementos */
 }
 
 /* Estilo para el logotipo */
 .logo {
-    font-size: 24px; /* Tamaño de la fuente */
-    color: red; /* Color del texto */
-    font-weight: 800; /* Peso de la fuente */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-size: 24px;
+    /* Tamaño de la fuente */
+    color: red;
+    /* Color del texto */
+    font-weight: 800;
+    /* Peso de la fuente */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
 }
 
 /* Oculta el menú en móviles */
 #menu {
-    display: none; /* No mostrar el menú */
+    display: none;
+    /* No mostrar el menú */
 }
 
 /* Icono del menú */
 .menu-icono {
-    width: 25px; /* Ancho del icono */
+    width: 25px;
+    /* Ancho del icono */
 }
 
 /* Estilo para la etiqueta del menú en móviles */
 .menu label {
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    display: none; /* Ocultar por defecto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    display: none;
+    /* Ocultar por defecto */
 }
 
 /* Estilo para los títulos de dirección */
 .dir h3 {
-    font-size: 18px; /* Tamaño de la fuente */
+    font-size: 18px;
+    /* Tamaño de la fuente */
 }
 
 /* Estilo para párrafos en dirección */
 .dir p {
-    font-size: 22px; /* Tamaño de la fuente */
-    color: greenyellow; /* Color del texto */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-size: 22px;
+    /* Tamaño de la fuente */
+    color: white;
+    /* Color del texto */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
 }
 
 /* Estilos para un título grande */
 h2 {
-    font-size: 70px; /* Tamaño de la fuente */
-    line-height: 100px; /* Espacio entre líneas */
-    color: #ffffff; /* Color del texto */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    font-family: 'Bebas Neue', cursive; /* Fuente del título */
-    margin-bottom: 20px; /* Margen inferior */
+    font-size: 70px;
+    /* Tamaño de la fuente */
+    line-height: 100px;
+    /* Espacio entre líneas */
+    color: #ffffff;
+    /* Color del texto */
+    text-transform: uppercase;
+    /* Fuente del título */
+    margin-bottom: 20px;
+    /* Margen inferior */
 }
 
 /* Estilo para párrafos en general */
 p {
-    font-size: 16px; /* Tamaño de la fuente */
-    color: greenyellow; /* Color del texto */
-    margin: 25px; /* Margen alrededor */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    color: white;
+    /* Color del texto */
+    margin: 25px;
+    /* Margen alrededor */
 }
 
 /* Estilos para la sección de servicios */
 .services {
-    padding: 100px 0; /* Relleno superior e inferior */
-    text-align: center; /* Centra el contenido */
+    padding: 100px 0;
+    /* Relleno superior e inferior */
+    text-align: center;
+    /* Centra el contenido */
 }
 
 /* Contenedor para el texto de servicios */
 .services-txt {
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Alinea elementos en columna */
-    align-items: center; /* Centra elementos */
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Alinea elementos en columna */
+    align-items: center;
+    /* Centra elementos */
 }
 
 /* Línea divisoria debajo del título de servicios */
 hr {
-    border: 1px solid #cf2d3a; /* Estilo de la línea */
-    width: 150px; /* Ancho de la línea */
+    border: 1px solid #cf2d3a;
+    /* Estilo de la línea */
+    width: 150px;
+    /* Ancho de la línea */
 }
 
 /* Estilo para párrafos dentro de servicios */
 .services-txt p {
-    padding: 50px 150px; /* Relleno alrededor del párrafo */
+    padding: 50px 150px;
+    /* Relleno alrededor del párrafo */
 }
+
 .services-1 p {
-    color: white; /* Cambia el color del texto a blanco */
+    color: white;
+    /* Cambia el color del texto a blanco */
 }
 
 /* Contenedor para agrupar servicios */
 .services-group {
-    display: flex; /* Usar flexbox para el diseño */
-    justify-content: space-between; /* Espacio entre elementos */
-    margin: 45px 0; /* Margen alrededor del grupo */
+    display: flex;
+    /* Usar flexbox para el diseño */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    margin: 45px 0;
+    /* Margen alrededor del grupo */
 }
 
 /* Estilos para elementos de servicio */
 .services-1 {
-    background-color: #070707; /* Color de fondo */
-    padding: 35px 25px; /* Relleno alrededor */
-    margin: 0 10px; /* Margen alrededor */
-    border-radius: 45px; /* Esquinas redondeadas */
+    background-color: #070707;
+    /* Color de fondo */
+    padding: 35px 25px;
+    /* Relleno alrededor */
+    margin: 0 10px;
+    /* Margen alrededor */
+    border-radius: 45px;
+    /* Esquinas redondeadas */
 }
 
 marquee img {
     width: 250px;
     height: 350px;
 }
+
 /* Estilos para imágenes dentro de servicios */
 .services-1 img {
-    width: 250px; /* Ancho de la imagen */
-    margin-bottom: 15px; /* Margen inferior */
+    width: 250px;
+    /* Ancho de la imagen */
+    margin-bottom: 15px;
+    /* Margen inferior */
+}
+
+.services-1 h3, .prices-1 h3{
+    background: rgb(255, 255, 255, .5);
+    border-radius: 10px;
 }
 
 /* Contenedor para precios */
 .prices {
-    display: flex; /* Usar flexbox */
+    display: flex;
+    /* Usar flexbox */
 }
 
 /* Estilo para la sección de precios */
 .prices-1 {
-    width: 50%; /* Ancho de la sección */
-    padding: 100px 200px 100px 50px; /* Relleno alrededor */
-    background-color: #1f1f1f; /* Color de fondo */
+    width: 50%;
+    /* Ancho de la sección */
+    padding: 100px 200px 100px 50px;
+    /* Relleno alrededor */
+    background-color: #1f1f1f;
+    /* Color de fondo */
 }
 
-.prices-2{
+.prices-1 h3{
+    padding:20px ;
+}
+
+.prices-2 {
     width: 1300px;
     min-height: 850px;
 }
 
-video{
+video {
     width: 100%;
 }
 
 
 /* Estilos para tablas */
 table {
-    margin: 50px 0; /* Margen alrededor */
-    width: 100%; /* Ancho total */
-    text-align: left; /* Alineación de texto a la izquierda */
-    border-collapse: collapse; /* Colapsa bordes de las celdas */
+    margin: 50px 0;
+    /* Margen alrededor */
+    width: 100%;
+    /* Ancho total */
+    text-align: left;
+    /* Alineación de texto a la izquierda */
+    border-collapse: collapse;
+    /* Colapsa bordes de las celdas */
 }
 
 /* Estilos para filas de tabla */
 tr {
-    display: flex; /* Usar flexbox para el diseño */
-    justify-content: space-between; /* Espacio entre celdas */
-    border-bottom: 1px solid #afafaf; /* Línea divisoria inferior */
-    margin-bottom: 20px; /* Margen inferior */
+    display: flex;
+    /* Usar flexbox para el diseño */
+    justify-content: space-between;
+    /* Espacio entre celdas */
+    border-bottom: 1px solid #afafaf;
+    /* Línea divisoria inferior */
+    margin-bottom: 20px;
+    /* Margen inferior */
 }
 
 /* Estilos para encabezados de tabla */
 th {
-    color: #ffffff; /* Color del texto */
-    padding-bottom: 15px; /* Relleno inferior */
+    color: #ffffff;
+    /* Color del texto */
+    padding-bottom: 15px;
+    /* Relleno inferior */
 }
 
 /* Estilos para celdas de tabla */
 td {
-    color: #cf2d3a; /* Color del texto */
+    color: #cf2d3a;
+    /* Color del texto */
 }
 
 /* Estilos para la sección personal */
 .personal {
-    padding: 100px 0; /* Relleno superior e inferior */
-    text-align: center; /* Centra el contenido */
+    padding: 100px 0;
+    /* Relleno superior e inferior */
+    text-align: center;
+    /* Centra el contenido */
 }
 
 /* Estilos para el texto de la sección personal */
 .personal-txt {
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Alinea elementos en columna */
-    align-items: center; /* Centra elementos */
-    text-align: center; /* Centra el texto */
-    margin-bottom: 25px; /* Margen inferior */
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Alinea elementos en columna */
+    align-items: center;
+    /* Centra elementos */
+    text-align: center;
+    /* Centra el texto */
+    margin-bottom: 25px;
+    /* Margen inferior */
 }
 
 /* kjhhh */
-.personal-txt h2{
-    color:greenyellow;
-}
 
-.personal-txt p{
+.personal-txt p {
     color: #ffffff;
 }
+
 /* Agrupación de elementos personales */
 .personal-group {
-    display: flex; /* Usar flexbox */
-    justify-content: space-between; /* Espacio entre elementos */
-    margin-bottom: 25px; /* Margen inferior */
+    display: flex;
+    /* Usar flexbox */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    margin-bottom: 25px;
+    /* Margen inferior */
 }
 
 /* Estilos para elementos individuales en personal */
 .personal-1 {
-    text-align: center; /* Centra el texto */
+    text-align: center;
+    /* Centra el texto */
 }
 
 /* Estilo para títulos en personal */
 .personal-1 h3 {
-    font-size: 22px; /* Tamaño de la fuente */
+    font-size: 22px;
+    /* Tamaño de la fuente */
 }
 
 /* Estilo para párrafos en personal */
 .personal-1 p {
-    padding: 0 50px; /* Relleno horizontal */
+    padding: 0 50px;
+    /* Relleno horizontal */
     color: #ffffff;
 }
 
 /* Estilos para el pie de página */
 .footer-bg {
-    text-align: center; /* Centra el contenido */
+    text-align: center;
+    /* Centra el contenido */
 }
-.footer-bg h2{
-    color: greenyellow;
-}
+
 
 /* Estilo para formularios */
 form {
-    display: flex; /* Usar flexbox */
-    flex-direction: column; /* Alinea elementos en columna */
-    align-items: center; /* Centra elementos */
+    display: flex;
+    /* Usar flexbox */
+    flex-direction: column;
+    /* Alinea elementos en columna */
+    align-items: center;
+    /* Centra elementos */
 }
 
 /* Estilo para campos de formulario */
 .campo-1 {
-    margin-bottom: 15px; /* Margen inferior */
+    margin-bottom: 15px;
+    /* Margen inferior */
 }
 
 /* Estilos para los campos de entrada */
 .campo {
-    margin: 5px; /* Margen alrededor */
-    padding: 20px 15px; /* Relleno interno */
-    width: 250px; /* Ancho del campo */
-    background-color: #0E0E0E; /* Color de fondo */
-    border: 1px solid #cf2d3a; /* Borde */
-    outline: none; /* Sin contorno */
-    border-radius: 10px; /* Esquinas redondeadas */
-    color: #ffffff; /* Color del texto */
-    font-size: 14px; /* Tamaño de la fuente */
+    margin: 5px;
+    /* Margen alrededor */
+    padding: 20px 15px;
+    /* Relleno interno */
+    width: 250px;
+    /* Ancho del campo */
+    background-color: #0E0E0E;
+    /* Color de fondo */
+    border: 1px solid #cf2d3a;
+    /* Borde */
+    outline: none;
+    /* Sin contorno */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    color: #ffffff;
+    /* Color del texto */
+    font-size: 14px;
+    /* Tamaño de la fuente */
 }
 
-/* Estilo para áreas de texto */
-textarea {
-    width: 520px !important; /* Ancho fijo */
+.campoText {
+    margin: 5px;
+    /* Margen alrededor */
+    padding: 20px 15px;
+    /* Relleno interno */
+    background-color: #0E0E0E;
+    /* Color de fondo */
+    border: 1px solid #cf2d3a;
+    /* Borde */
+    outline: none;
+    /* Sin contorno */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    color: #ffffff;
+    /* Color del texto */
+    font-size: 14px;
+    /* Tamaño de la fuente */
+    width: 500px;
+    /* Mantiene el ancho máximo */
+    min-width: 250px;
+    /* Para dispositivos pequeños */
 }
 
 /* Estilos para el texto del pie de página */
 .footer-txt {
-    text-align: center; /* Centra el texto */
-    padding: 10px; /* Relleno alrededor */
-    background-color: #070707; /* Color de fondo */
+    text-align: center;
+    /* Centra el texto */
+    padding: 10px;
+    /* Relleno alrededor */
+    background-color: #070707;
+    /* Color de fondo */
 }
 
 
 
 
-@media(max-width:1400px){
+@media(max-width:1400px) {
 
-    .btn-login{
-        font-size: 1rem; /* tamaño más pequeño en pantallas pequeñas */
+    .btn-login {
+        font-size: 1rem;
+        /* tamaño más pequeño en pantallas pequeñas */
     }
 
     .subtitulole {
-        font-size: 2rem; /* tamaño más pequeño en pantallas pequeñas */
+        font-size: 2rem;
+        /* tamaño más pequeño en pantallas pequeñas */
+
     }
 
     .header-txt span,
     h3 {
-        font-size: 1rem; /* tamaño más pequeño en pantallas pequeñas */
+        font-size: 1rem;
+        /* tamaño más pequeño en pantallas pequeñas */
     }
 
     .header-txt {
-        font-size: 1rem; /* tamaño más pequeño en pantallas pequeñas */
+        font-size: 1rem;
+        /* tamaño más pequeño en pantallas pequeñas */
+        padding: 0 20px 0 20px;
     }
 
     .btn-1 {
-        font-size: 1rem; /* tamaño más pequeño en pantallas pequeñas */
+        font-size: 1rem;
+        /* tamaño más pequeño en pantallas pequeñas */
     }
-    
+
     .btn-1a {
-        font-size: 1rem; /* tamaño más pequeño en pantallas pequeñas */
+        font-size: 1rem;
+        /* tamaño más pequeño en pantallas pequeñas */
     }
-    
+
     .lion h1 {
         font-size: 25px;
     }
-    .header{
+
+    .header {
         min-height: 0vh;
     }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu a {
+        width: 150px;
+    }
+
     .header-content {
         padding: 80px 30px 50px 30px;
     }
+
     .header-txt {
+        margin-top: 90px;
         margin-bottom: 15px;
     }
-    .header h1{
+
+    .header h1 {
         height: 90px;
-    } 
-    */
-    .header-dir {
-        flex-direction: column ;
     }
+
+    */ .header-dir {
+        flex-direction: column;
+    }
+
     .dir p {
         font-size: 18px;
     }
+
     .welcome {
-        flex-direction: column ;
+        flex-direction: column;
     }
+
     .welcome-1 {
         display: none;
     }
+
     .welcome-2 {
         width: 100%;
         padding: 30px;
         text-align: center;
     }
+
     h2 {
         font-size: 70px;
-        line-height: 80px; /* la altura de la  letra */
+        line-height: 80px;
+        /* la altura de la  letra */
     }
+
     p {
         margin: 15px;
     }
+
     .services {
         padding: 30px;
     }
-    .services-txt  p {
+
+    .services-txt p {
         padding: 0;
     }
+
     .services-group {
         flex-direction: column;
         margin: 0;
     }
+
     .services-1 {
         margin: 0 0 20px 0;
     }
+
     .prices {
         display: block;
     }
-    .prices-1{
+
+    .prices-1 {
         width: 100%;
         padding: 30px;
         text-align: center;
     }
-    .prices-2{
+
+    .prices-2 {
         width: 100%;
     }
+
     table {
         margin: 25px 0 0 0;
     }
+
+    .campoText {
+        min-width: 250px;
+    }
+
     .personal {
         padding: 30px;
     }
-    .personal-group{
+
+    .personal-group {
         flex-direction: column;
         margin-bottom: 0;
     }
+
     .personal-1 {
-        margin-bottom: 25px; /* es una separacion hacia abajo */
+        margin-bottom: 25px;
+        /* es una separacion hacia abajo */
     }
+
     .footer-bg {
         padding: 30px;
     }
-    textarea {
-        width: 250 !important;
-    }
-
 }
 
 
+@media (max-width: 500px) {
+    .subtitulole {
+        font-size: 1.5rem;
+        /* Reduce el tamaño de la fuente */
+        letter-spacing: 5px;
+        /* Disminuye el espaciado entre letras */
+        word-wrap: break-word;
+        /* Permite romper líneas si es necesario */
+    }
 
-
-
+    .campoText {
+        width: 250px;
+        /* Ocupa todo el espacio disponible */
+        padding: 10px;
+        /* Ajustar el padding */
+    }
+}
